@@ -23,7 +23,7 @@ int main()
     */
     // time(NULL) function that returns the current time its code is in <ctime> library
     // read more about srand at http://www.cplusplus.com/reference/cstdlib/srand/?kw=srand
-        // srand ( time(NULL) ); // assigns the current time to the seed 
+    srand ( time(NULL) ); // assigns the current time to the seed 
 
     cout << "RAND_MAX value is " << RAND_MAX << endl;
                             
