@@ -1,0 +1,17 @@
+RAND_MAX value is 2147483647
+1804289383	846930886	1681692777	1714636915	1957747793	424238335	719885386	1649760492	596516649	1189641421	
+Q1: What is the output of rand(). Why? 
+Answer Q1: Rand outputs 10 random numbers between 0 and 2,147,483,647. This range is because we didn't give the function a specific range.
+
+2	2	0	4	3	1	0	1	2	1	
+Q2: What is the output of rand()%5. Why? 
+Answer Q2: This rand outputs 10 numbers between 0-4, this is based on the remainder division.
+
+4	6	5	7	5	3	5	6	5	3	
+Q3: What is the output of rand()%5+3. Why?
+Answer Q3: This rand outputs the numbers 0-4 + 3, because of the same %5 but with +3.
+
+Q4: What is the output of the program when srand(time(NULL)) is removed. Why
+Answer Q4: When srand line is removed, the random numbers generated are exactly the same. This is because the seeds time is not changing.
+
+6	1	1	1	6	4	2	5	2	5	4	4	4	6	3	2	3	3	6	1	6	5	2	3	3	4	3	3	5	2	4	4	3	4	3	6	5	4	2	6	1	4	1	4	3	4	3	3	4	3	

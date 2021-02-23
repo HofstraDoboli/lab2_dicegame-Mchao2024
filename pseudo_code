@@ -1,1 +1,54 @@
 Add your steps (pseudo-code) for the dice game here.
+
+Start with welcome 
+create char start game
+Ask to begin game (Y/N) 
+take input for start game 
+begin based on answer 
+
+WHILE start game is 'y' or 'Y' 
+    create die1 and die2 with values between 1-6 
+    create playPoint variable 
+
+    create a boolean called play
+    WHILE play is true
+        IF playPoint is 7 or 11
+            print value playPoint
+            print "You won!"
+            play equals false 
+        ELSE IF playPoint is 2,3, or 12
+            print value playPoint
+            print "You lost."
+            play equals false 
+        ELSE
+            print value playPoint
+            create char roll 
+            ask "Please press 'r' or 'R' to roll again"  
+            create a boolean called rolling
+            WHILE rolling is true
+        
+                IF roll is 'r' or 'R'
+                    roll die1 and die2 again by making new dice 
+                    create dieTotal, equal to die1_1 + die2_2 
+                    IF playerPoint equals dieTotal
+                        print dieTotal
+                        print "You won!"
+                        rolling equals false 
+                    ELSE IF dieTotal equals 7
+                        print dieTotal
+                        print "You lost."
+                        rolling equals false
+                    ELSE
+                        print dieTotal
+                        ask to press 'r' or 'R' to roll again 
+                        read roll
+                        roll again 
+                ELSE
+                    print "please type R to roll again" 
+                    read roll
+                play equals false
+                
+    ask "Would you like to play again?"
+    start again or end based on input 
+
+
